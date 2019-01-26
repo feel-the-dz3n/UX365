@@ -1,0 +1,74 @@
+﻿<Window x:Class="UX365DefaultSkin.SkinWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UX365DefaultSkin"
+        mc:Ignorable="d"
+        Title="{Binding Text, ElementName=textBlock}" Height="450" Width="800" Background="{x:Null}" Activated="Window_Activated" Deactivated="Window_Deactivated" StateChanged="Window_StateChanged">
+    <Grid x:Name="DefaultGrid" Background="#25FFFFFF">
+        <Grid x:Name="TopBorder" HorizontalAlignment="Stretch" Height="25" Tag="TopBorder" VerticalAlignment="Top">
+            <Grid x:Name="WindowDrag" Tag="WindowDrag" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonDown="WindowDrag_MouseLeftButtonDown">
+                <Grid.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>
+                </Grid.Background>
+                <Border IsHitTestVisible="False" BorderBrush="Black" Margin="0" Padding="0" BorderThickness="1"/>
+            </Grid>
+            <TextBlock x:Name="textBlock" Tag="WindowTitle" VerticalAlignment="Center" IsHitTestVisible="False" HorizontalAlignment="Center" Text="UX365 Default Skin With Default Title" TextAlignment="Center">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Grid x:Name="ButtonExit" MouseLeftButtonDown="ButtonExit_MouseLeftButtonDown" Tag="ButtonExit" HorizontalAlignment="Left" Width="25">
+                <Grid.ContextMenu>
+                    <ContextMenu x:Name="ExitMenu">
+                        <MenuItem Header="Exit"/>
+                    </ContextMenu>
+                </Grid.ContextMenu>
+                <Grid.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </Grid.Background>
+                <Border BorderBrush="Black" IsHitTestVisible="False" BorderThickness="1"></Border>
+                <Border IsHitTestVisible="False" BorderBrush="#FF898989" BorderThickness="1" Margin="6,12,4,10"/>
+                <Border IsHitTestVisible="False" Background="White" BorderBrush="Black" BorderThickness="1" Margin="5,11"></Border>
+            </Grid>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Height="5" VerticalAlignment="Top" Tag="WindowTop">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Grid.Background>
+            <Border BorderBrush="Black" IsHitTestVisible="False" BorderThickness="0,1,1,1" Margin="4,0,0,0" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Left" Width="1" BorderThickness="0,1,1,1" Margin="28,0,0,0" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Right" Width="28" BorderThickness="1"></Border>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Height="5" VerticalAlignment="Bottom" Tag="WindowBottom" Grid.Row="1">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Grid.Background>
+            <Border BorderBrush="Black" IsHitTestVisible="False" BorderThickness="0,1,1,1" Margin="4,0,0,0" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Left" Width="1" BorderThickness="0,1,1,1" Margin="28,0,0,0" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Right" Width="28" BorderThickness="1"></Border>
+        </Grid>
+        <Grid x:Name="WindowLeft" HorizontalAlignment="Left" Width="5" VerticalAlignment="Stretch" Tag="WindowLeft" Grid.RowSpan="2">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Grid.Background>
+            <Border BorderBrush="Black" IsHitTestVisible="False" BorderThickness="1,0" Margin="0,4"></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" VerticalAlignment="Top" Height="1" BorderThickness="1,0,1,1" Margin="0,28,0,0" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" VerticalAlignment="Bottom" Height="24" BorderThickness="1,1,1,0" Margin="0,0,0,4" Grid.Row="1" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="5" BorderThickness="1,1,0,0" Width="5"></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="5" BorderThickness="1,0,0,1" Width="5" Grid.Row="1"></Border>
+        </Grid>
+        <Grid x:Name="WindowRight" HorizontalAlignment="Right" Width="5" VerticalAlignment="Stretch" Tag="WindowRight" Grid.RowSpan="2">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Grid.Background>
+            <Border BorderBrush="Black" IsHitTestVisible="False" BorderThickness="1,0" Margin="0,4" Grid.RowSpan="2" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" VerticalAlignment="Top" Height="1" BorderThickness="1,0,1,1" Margin="0,28,0,0" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" VerticalAlignment="Bottom" Height="24" BorderThickness="1,1,1,0" Margin="0,0,0,4" Grid.Row="1" ></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="5" BorderThickness="0,1,1,0" Width="5"></Border>
+            <Border BorderBrush="Black" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="5" BorderThickness="0,0,1,1" Width="5" Grid.Row="1"></Border>
+        </Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This is window content. You should implement click thru it." VerticalAlignment="Center"/>
+    </Grid>
+</Window>

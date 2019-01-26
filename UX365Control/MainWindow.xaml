@@ -1,0 +1,33 @@
+﻿<Window x:Class="UX365Control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UX365Control"
+        mc:Ignorable="d"
+        Title="UX365" Height="316.037" Width="667.145" Topmost="True" Closing="Window_Closing" LocationChanged="Window_LocationChanged" SizeChanged="Window_SizeChanged">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Label Content="In future, this window will become something like control panel" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Cursor="Hand"  TextWrapping="Wrap" VerticalAlignment="Top" Margin="16,41,0,0" TextDecorations="Underline" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </TextBlock.Foreground><Run Text="Open log file"/></TextBlock>
+        <Button Content="Exit" Margin="0,38,16,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="69" Click="Button_Click"/>
+        <Grid x:Name="grid" HorizontalAlignment="Stretch" Margin="0,75,0,0">
+            <Grid.Effect>
+                <DropShadowEffect Direction="450" BlurRadius="15" Color="{Binding Background, ElementName=grid}" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Grid.Background>
+            <TextBox x:Name="tbKEK" Margin="10,10,145,10" TextWrapping="Wrap"/>
+            <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="Drag here" VerticalAlignment="Center" Margin="0,92,43,92"/>
+            <Button Content="Test Form" Margin="0,179,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="69" Click="Button_Click_1"/>
+        </Grid>
+        <Button x:Name="btnLoadSkin" Content="Load Skin And Set It Everywhere" Margin="0,38,90,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="188" Click="btnLoadSkin_Click"/>
+        <Button x:Name="btnKillSkins" Content="Kill All Skins" Margin="0,38,283,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="96" Click="btnKillSkins_Click"/>
+        <Button x:Name="btnUpdate" Content="UPDATE" Margin="0,38,384,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="96" Click="btnUpdate_Click"/>
+        <CheckBox x:Name="cbEvery" Content="not everywhere, only this proc" HorizontalAlignment="Right" Margin="0,22,115,0" VerticalAlignment="Top" IsChecked="True"/>
+
+    </Grid>
+</Window>

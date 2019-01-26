@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UX365Installer", "UX365\UX365Installer.csproj", "{18FC654C-90B1-499A-A653-A610A09A3865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UX365Control", "UX365Control\UX365Control.csproj", "{D81479A3-0CBC-4249-B339-04C172178E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UX365StatusChecker", "UX365StatusChecker\UX365StatusChecker.csproj", "{6E43927A-8EDC-47AF-AC21-DFA0FCA6B641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UX365Core", "UX365Core\UX365Core.csproj", "{C863E59F-6E7F-447F-BD9D-2D956F69EBD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UX365DefaultSkin", "UX365DefaultSkin\UX365DefaultSkin.csproj", "{8417EAE7-1A2C-4C00-A61C-1399C426D9EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UX365ExtraSkin", "UX365ExtraSkin\UX365ExtraSkin.csproj", "{FF1656D6-F6F2-4574-8703-6D278B1E8333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18FC654C-90B1-499A-A653-A610A09A3865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FC654C-90B1-499A-A653-A610A09A3865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FC654C-90B1-499A-A653-A610A09A3865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FC654C-90B1-499A-A653-A610A09A3865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81479A3-0CBC-4249-B339-04C172178E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81479A3-0CBC-4249-B339-04C172178E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81479A3-0CBC-4249-B339-04C172178E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81479A3-0CBC-4249-B339-04C172178E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E43927A-8EDC-47AF-AC21-DFA0FCA6B641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E43927A-8EDC-47AF-AC21-DFA0FCA6B641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E43927A-8EDC-47AF-AC21-DFA0FCA6B641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E43927A-8EDC-47AF-AC21-DFA0FCA6B641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C863E59F-6E7F-447F-BD9D-2D956F69EBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C863E59F-6E7F-447F-BD9D-2D956F69EBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C863E59F-6E7F-447F-BD9D-2D956F69EBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C863E59F-6E7F-447F-BD9D-2D956F69EBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8417EAE7-1A2C-4C00-A61C-1399C426D9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8417EAE7-1A2C-4C00-A61C-1399C426D9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8417EAE7-1A2C-4C00-A61C-1399C426D9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8417EAE7-1A2C-4C00-A61C-1399C426D9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1656D6-F6F2-4574-8703-6D278B1E8333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1656D6-F6F2-4574-8703-6D278B1E8333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1656D6-F6F2-4574-8703-6D278B1E8333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1656D6-F6F2-4574-8703-6D278B1E8333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7774496-F845-45C7-8A78-213C50AEDB1E}
+	EndGlobalSection
+EndGlobal
